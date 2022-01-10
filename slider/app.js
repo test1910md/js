@@ -6,6 +6,15 @@ const mainslide=document.querySelector('.main-slide')
 const container =document.querySelector('.container')
 const slide_count=mainslide.querySelectorAll('div').length
 
+document.addEventListener('keydown', event => {
+ if (event.key==='ArrowUp'){
+     change_slide('up')
+ }
+ else if (event.key === 'ArrowDown') {
+     change_slide('down')
+ }
+})
+
 let active_slide_index=0
 
 sidebar.style.top=`-${(slide_count-1)*100}vh`
