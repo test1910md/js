@@ -23,14 +23,12 @@ function dragstart(event) {
 function dragend(event) {
     console.log('drag end')
     event.target.classList.remove('hold', 'hide')
-    // event.target.className = 'item'
 
 }
 
 function dragover(event) {
     event.preventDefault()
     
-
 }
 
 function dragenter(event) {
